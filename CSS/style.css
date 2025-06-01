@@ -1,332 +1,419 @@
-/* Reset padrão */
-* {
+*{
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
 }
 
+/*--Reniciaraa
+/* Estilo para o corpo da página */
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  /* Estilo para a barra de navegação */
+  nav {
+    background-color: transparent;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .menu {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    display: flex;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: color 0.5s;
+  }
+  
+  .menu a:hover {
+    color: #7a67cd;
+  }
+  
+  /* Estilo para o cabeçalho */
+  header {
+    background-image: url('banner.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .titulo {
+    position: relative; /* Define o posicionamento relativo */
+  }
+  
+  .titulo img {
+    display: block; /* Garante que a imagem ocupe todo o espaço do contêiner */
+    width: 100%; /* Pode ajustar conforme necessário */
+    height: auto; /* Para manter a proporção */
+  }
+  
+  .titulo p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font: weight 500px;
+    font-size: 50px;
+    position: absolute; /* Define o posicionamento absoluto */
+    top: 50%; /* Posiciona o parágrafo no centro vertical */
+    left: 50%; /* Posiciona o parágrafo no centro horizontal */
+    transform: translate(-50%, -50%); /* Move o parágrafo de volta metade da sua largura e metade da sua altura para o centro */
+    color: #f9f9f9;
+    padding: 10px; /* Adiciona um preenchimento para melhorar a legibilidade */
+  }
+  
+  
+  .booking {
+    background-color: rgba(24, 66, 191, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    display: inline-block;
+  }
+  
+  .booking form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .booking label {
+    margin-right: 10px;
+  }
+  
+  .booking input[type="text"],
+  .booking input[type="date"] {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 4px;
+    border: none;
+    width: 200px;
+  }
+  
+  .booking button {
+    padding: 10px 20px;
+    background-color: #5e43d7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+  }
+  
+  .booking button:hover {
+    background-color: #747cfa; 
+  }
+ 
+  /* Estilo para os próximos passeios e destinos */
+/* Estilo para a seção de Passeios e Destinos */
+.Passeios {
+    padding: 50px 20px;
+    text-align: center;
+    display: flex;
+  }
+  
+  .Passeios h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para o grid de imagens */
+  .fotos-passeio {
+    display: grid;
+    justify-content: end;
+    align-items: stretch;
+    grid-template-columns: repeat(2, 1fr); /* Cria 4 colunas */
+    gap: 10px; /* Espaçamento entre as imagens */
+    /*justify-items: center; / Centraliza horizontalmente */
+  }
+  
+.fotos{
+  height: 300px;
+  width: 300px;
 }
 
-/* ===== NAVBAR ===== */
-header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #004080;
-  padding: 1rem 2rem;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 100;
-}
+  /* Estilo para as imagens */
+  .fotos img {
+    width: 100%; /* Ajusta a largura da imagem para ocupar o espaço da coluna */
+    height: auto; /* Para manter a proporção */
+    border-right: 1px solid #ccc; /* Adiciona borda à direita de cada imagem */
+    padding-right: 20px; /* Espaçamento à direita para a borda */
 
-.logo {
-  font-size: 1.8rem;
-  color: white;
-  font-weight: bold;
-}
 
-.menu a {
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-}
+  }
 
-.menu a:hover {
-  color: #ffd700;
-}
+ 
+  
+  
+  /* Estilo para o texto ao lado das imagens */
+  .info-passeio {
+    text-align: left; 
+  }
+  .info-passeio img {
+    text-align: right;
+  }
+  .info-passeio p {
+    padding-right: 20px; /* Espaçamento à direita para a borda */
+  }
+  .buttonsaiba {
+    background-color: #5e43d7 ; 
+    font-size: 30px;
+    transition: background-color 0.5s;
+    } 
+    
+  
 
-/* ===== BANNER E FORMULÁRIO ===== */
-.titulo {
-  position: relative;
-  margin-top: 80px;
-  text-align: center;
-}
+    .buttonsaiba {
+      background-color: #5e43d7; /* Cor de fundo padrão */
+      color: white; /* Cor do texto */
+      padding: 10px 20px; /* Espaçamento interno */
+      border: none; /* Remover borda */
+      border-radius: 5px; /* Arredondar cantos */
+      cursor: pointer; /* Cursor ao passar o mouse */
+      transition: background-color 0.3s ease; /* Transição suave */
+  }
+  
+  .buttonsaiba:hover {
+      background-color: #747cfa; /* Cor de fundo ao passar o mouse */
+  }
+  
 
-.titulo img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  opacity: 0.8;
-}
-
-.titulo p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3rem;
-  color: white;
-  font-weight: bold;
-  text-shadow: 2px 2px 5px #000;
-}
-
-.booking {
-  background-color: #ffffff;
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  margin-top: -60px;
-}
-
-.booking form {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.booking label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.booking input {
-  padding: 0.5rem;
-  width: 200px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.search-button {
-  background-color: #004080;
-  color: white;
-  padding: 0.7rem 1.5rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.search-button:hover {
-  background-color: #00264d;
-}
-
-/* ===== PASSEIOS ===== */
-section.Passeios {
-  padding: 4rem 2rem;
-  background-color: #f0f8ff;
-  text-align: center;
-}
-
-.info-passeio h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.info-passeio hr {
-  width: 60px;
-  border: 2px solid #004080;
-  margin: 1rem auto;
-}
-
-.info-passeio p {
-  max-width: 800px;
-  margin: 0 auto 2rem;
-  font-size: 1rem;
-  color: #555;
-}
-
-.buttonsaiba {
-  background-color: #004080;
-  color: white;
-  padding: 0.7rem 1.2rem;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.fotos-passeio {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-}
-
-.fotos img {
-  width: 250px;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-/* ===== DESTINOS ===== */
+  /* Estilo para a seção de destinos */
 .destinos {
-  padding: 4rem 2rem;
-}
-
-.destinos h1 {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-}
-
-.grupo-destinos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.card-destino {
-  background-color: #fff;
-  border-radius: 10px;
-  width: 300px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.card-destino:hover {
-  transform: scale(1.02);
-}
-
-.card-destino img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.card-destino div {
-  padding: 1rem;
-  text-align: left;
-}
-
-.valor {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1rem 0;
-}
-
-.valor h3 {
-  color: #008000;
-}
-
-.valor span {
-  text-decoration: line-through;
-  color: #999;
-}
-
-.button {
-  background-color: #004080;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: #00264d;
-}
-
-/* ===== AVALIAÇÕES ===== */
+  background: linear-gradient(to right, #FFE7C2,#BDACFF);
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .destinos h1 {
+    font-size: 32px;
+    margin-bottom: 20
+  }
+  
+  /* Estilo para o grid de imagens */
+  .grupo-destinos {
+    display: grid;
+    grid-template-columns: repeat(2,1fr); /*repeat(auto-fit, minmax(200px, 1fr)); /Cria colunas automáticas */
+    gap: 10px; /*Espaçamento entre as imagens */
+    justify-content: center; /*Centraliza horizontalmente; */
+  }
+  
+  
+  /* Estilo para os cards de destinos */
+  .card-destino {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  
+  .card-destino img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-destino div {
+    padding: 20px;
+  }
+  
+  .card-destino span {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .card-destino p {
+    margin-bottom: 10px;
+  }
+  
+  .card-destino .valor {
+    margin-bottom: 20px;
+  }
+  
+  .card-destino button {
+    background-color: #5e43d7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+  }
+  
+  .card-destino button:hover {
+    background-color:#747cfa;
+    transition: color 0.5s;
+  }
+  
+  /* Estilo para a seção de avaliações */
+  .avaliacoes {
+    background-color: #333;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .avaliacoes h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para a seção de avaliações */
 .avaliacoes {
-  background-color: #e6f0ff;
-  padding: 4rem 2rem;
-  text-align: center;
-}
+    background-color: #333;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .avaliacoes h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
 
+.avaliacoes {
+    background-color: #333;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .avaliacoes h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para o carrossel de avaliações */
 .carrossel {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  gap: 2rem;
-  overflow-x: auto;
-  padding: 2rem 0;
-}
-
-.cliente {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 1.5rem;
-  width: 300px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.cliente img {
-  width: 80px;
-  height: 80px;
-  margin-top: 1rem;
-  border-radius: 50%;
-}
-
-.cliente span {
-  font-weight: bold;
-}
-
-/* Botões do carrossel */
-.anterior,
-.proximo {
-  background-color: #004080;
-  color: white;
-  font-size: 1.5rem;
-  padding: 0.5rem;
-  border-radius: 50%;
-  cursor: pointer;
-  border: none;
-}
-
-/* ===== RODAPÉ ===== */
-footer {
-  background-color: #004080;
-  color: white;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 3rem 2rem;
-}
-
-footer h3 {
-  margin-bottom: 1rem;
-}
-
-footer p,
-footer span {
-  font-size: 0.9rem;
-  margin-bottom: 0.5rem;
-}
-
-.input-group {
-  display: flex;
-  gap: 0.5rem;
-  margin-top: 1rem;
-}
-
-.input-group input {
-  padding: 0.5rem;
-  border-radius: 5px;
-  border: none;
-}
-
-.input-group button {
-  background-color: #ffd700;
-  color: #004080;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-}
-
-.rede-social {
-  margin-top: 1rem;
-  display: flex;
-  gap: 1rem;
-}
-
-.rede-social i {
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-.rede-social i:hover {
-  color: #ffd700;
-}
+    width: 80%; /* Definindo uma largura fixa para o carrossel */
+    margin: 0 auto; /* Centralizando horizontalmente */
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  
+  .cliente {
+    flex: 0 0 auto;
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-align: center;
+  }
+  
+  .cliente.active {
+    opacity: 1;
+  }
+  
+  .cliente p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .cliente img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .carrossel button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 36px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .carrossel button.anterior {
+    left: 20px;
+  }
+  
+  .carrossel button.proximo {
+    right: 20px;
+  }
+  
+  
+  
+  
+  /* Estilo para o rodapé */
+  footer {
+    background-color: #222;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .empresa h1.logo {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .parceiros h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter h3,
+  .rede-social h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .newsletter button {
+    padding: 10px 20px;
+    background-color: #5e43d7;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.5s;
+  }
+  
+  .newsletter button:hover {
+    background-color: #747cfa;
+  }
+  
+  .rede-social i {
+    font-size: 32px;
+    margin: 0 10px;
+    transition: background-color 0.5s;
+  }
+  
+  /* Estilo para os ícones de redes sociais */
+  .fa-brands {
+    font-size: 32px;
+    margin: 0 10px;
+  }
+  
+  .rede-social i:hover{
+    background-color: #747cfa;
+  }

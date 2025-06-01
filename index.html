@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
+    <meta author="Calebe Goes, João Pedro, Dalila Adami">
+    <meta description="site de Viagens">
+    <meta keywords="html, css, site, viagem, turismo">
     <meta charset="UTF-8">
-    <meta name="author" content="Calebe Goes, João Pedro, Dalila Adami">
-    <meta name="description" content="Site de Viagens">
-    <meta name="keywords" content="html, css, site, viagem, turismo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buenas Viagens!</title>
-
-    <!-- CSS -->
+    <!-- CSS customizado -->
     <link rel="stylesheet" href="CSS/style.css">
 
     <!-- Font Awesome -->
@@ -16,175 +16,300 @@
 </head>
 <body>
     
-    <!-- ===== Barra de Navegação e Cabeçalho ===== -->
+    <!-- ===== Barra de Navegação fixa ===== -->
+    <!-- ===== Banner e calendario ===== -->
     <header>
         <nav>
             <div class="logo">Buenas Viagens!</div>
+    
             <div class="menu">
+    
                 <a href="#">Home</a>
-                <a href="#passeios">Passeios</a>
-                <a href="#destinos">Destinos</a>
-                <a href="#avaliacoes">Avaliações</a>
+                <a href="passeios">Passeios</a>
+                <a href="destinos">Destinos</a>
+                <a href="avaliacoes">Avaliações</a>
+    
             </div>
         </nav>
 
         <div class="titulo">
-            <img src="img/hallstatt-austria-2-1500x858.jpg" alt="Banner de viagem">
-            <p>Explore o mundo!</p>
-        </div>
+    <img src="img/hallstatt-austria-2-1500x858.jpg" alt="">
+    <p>Explore o mundo!</p>
+    </div>
 
-        <!-- ===== Formulário de Busca ===== -->
         <div class="booking">
+
             <form>
+
                 <div>
+
                     <label for="destino">Para onde vamos?</label>
                     <input type="text" id="destino">
+
                 </div>
+
                 <div>
+
                     <label for="partida">Quando?</label>
                     <input type="date" id="partida">
                 </div>
+
                 <div>
+
                     <label for="retorno">Retorno</label>
                     <input type="date" id="retorno">
                 </div>
+
                 <button class="search-button" type="button">Buscar</button>
             </form>
         </div>
     </header>
 
-    <!-- ===== Seção de Passeios ===== -->
-    <section class="passeios" id="passeios">
-        <div class="info-passeio">
-            <h1>Próximos Passeios & Destinos</h1>
-            <hr>
-            <p>
-                Descubra aventuras inesquecíveis com nossos passeios exclusivos! Conecte-se com a natureza, a cultura e experiências únicas ao redor do mundo.
-            </p>
-            <button class="buttonsaiba">Saiba mais</button>
+    <!-- ===== Passeios ===== -->
+    <section class="Passeios" id="passeios">
+    <div class="info-passeio">
+        <h1>Próximos Passeios & Destinos</h1>
+        <hr>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure molestias necessitatibus animi quibusdam fugiat sint omnis eum porro, atque minus, 
+            magni quae debitis quo nostrum obcaecati officia pariatur perferendis error quidem velit eaque cupiditate ratione veritatis accusamus. Rem atque recusandae 
+            quo quam quas illum sit unde iusto aperiam iure. Quasi tenetur ipsum quisquam in sequi inventore voluptatibus consectetur fugiat officiis. Eos doloremque earum accusantium, 
+            provident fugit sapiente molestias beatae inventore, dignissimos modi itaque deleniti sed labore tenetur ipsam, commodi ea libero ab doloribus quaerat eveniet maiores 
+            vitae alias nemo. Ipsa commodi placeat dolores cupiditate deleniti fugiat labore repudiandae atque officiis.
+        </p>
+        <button class="buttonsaiba">Saiba mais</button>
+    </div>
+    <div class="fotos-passeio">
+        <div class="fotos">
+            <img src="img/travel01.jpg" alt="Passeio 1">
         </div>
-        <div class="fotos-passeio">
-            <div class="fotos"><img src="img/travel01.jpg" alt="Passeio 1"></div>
-            <div class="fotos"><img src="img/travel02.jpg" alt="Passeio 2"></div>
-            <div class="fotos"><img src="img/travel03.jpg" alt="Passeio 3"></div>
-            <div class="fotos"><img src="img/travel04.jpg" alt="Passeio 4"></div>
+        <div class="fotos">
+            <img src="img/travel02.jpg" alt="Passeio 2">
         </div>
-    </section>
+        <div class="fotos">
+            <img src="img/travel03.jpg" alt="Passeio 3">
+        </div>
+        <div class="fotos">
+            <img src="img/travel04.jpg" alt="Passeio 4">
+        </div>
+    </div>
+</section>
 
-    <!-- ===== Seção de Destinos ===== -->
+    <!-- ===== Destinos ===== -->
+
     <section class="destinos" id="destinos">
+
         <h1>Para onde você quer viajar?</h1>
+
         <div class="grupo-destinos">
 
-            <!-- Cartões de Destino -->
-            <!-- Cada card representa um destino com imagem, descrição e preço -->
+            <!-- Destino 1 -->
             <div class="card-destino">
                 <img src="img/Barcelona.jpg" alt="Barcelona">
+
                 <div>
                     <span>Barcelona</span>, Espanha
-                    <p>Uma cidade vibrante cheia de cultura, arte e praias incríveis.</p>
-                    <div class="valor"><h3>R$ 3.900,00</h3><span>R$ 4.400,00</span></div>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus in saepe illum!
+                    </p>
+
+                    <div class="valor">
+                        <h3>R$ 3.900,00</h3>
+                        <span>R$ 4.400,00</span>
+                    </div>
+
+                    <div class="card-btn"></div>
                     <button class="button learn-more-button">Saiba mais</button>
                 </div>
             </div>
-
+            <!-- Destino 2 -->
             <div class="card-destino">
                 <img src="img/Porto.jpg" alt="Porto">
+
                 <div>
                     <span>Porto</span>, Portugal
-                    <p>Charme histórico e vinhos famosos às margens do Douro.</p>
-                    <div class="valor"><h3>R$ 3.900,00</h3><span>R$ 4.400,00</span></div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus in saepe illum!
+                    </p>
+
+                    <div class="valor">
+                        <h3>R$ 3.900,00</h3>
+                        <span>R$ 4.400,00</span>
+                    </div>
+
+                    <div class="card-btn"></div>
                     <button class="button learn-more-button">Saiba mais</button>
                 </div>
             </div>
-
+            <!-- Destino 3 -->
             <div class="card-destino">
                 <img src="img/Milan.jpg" alt="Milão">
+
                 <div>
                     <span>Milão</span>, Itália
-                    <p>Moda, arte e arquitetura em uma das cidades mais elegantes da Europa.</p>
-                    <div class="valor"><h3>R$ 3.900,00</h3><span>R$ 4.400,00</span></div>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus in saepe illum!
+                    </p>
+
+                    <div class="valor">
+                        <h3>R$ 3.900,00</h3>
+                        <span>R$ 4.400,00</span>
+                    </div>
+
+                    <div class="card-btn"></div>
                     <button class="button learn-more-button">Saiba mais</button>
                 </div>
             </div>
-
+            <!-- Destino 4 -->
             <div class="card-destino">
                 <img src="img/London.jpeg" alt="Londres">
+
                 <div>
                     <span>Londres</span>, Inglaterra
-                    <p>História, cultura e modernidade convivem na capital britânica.</p>
-                    <div class="valor"><h3>R$ 3.900,00</h3><span>R$ 4.400,00</span></div>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus in saepe illum!
+                    </p>
+
+                    <div class="valor">
+                        <h3>R$ 3.900,00</h3>
+                        <span>R$ 4.400,00</span>
+                    </div>
+
+                    <div class="card-btn"></div>
                     <button class="button learn-more-button">Saiba mais</button>
                 </div>
             </div>
-
+            <!-- Destino 5 -->
             <div class="card-destino">
                 <img src="img/Lauterbrunnen.jpeg" alt="Lauterbrunnen">
+
                 <div>
-                    <span>Lauterbrunnen</span>, Suíça
-                    <p>Um vale encantado com cachoeiras e montanhas espetaculares.</p>
-                    <div class="valor"><h3>R$ 3.900,00</h3><span>R$ 4.400,00</span></div>
+                    <span>Lauterbrunnen</span>, Suiça
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus in saepe illum!
+                    </p>
+
+                    <div class="valor">
+                        <h3>R$ 3.900,00</h3>
+                        <span>R$ 4.400,00</span>
+                    </div>
+
+                    <div class="card-btn"></div>
                     <button class="button learn-more-button">Saiba mais</button>
                 </div>
             </div>
-
+            <!-- Destino 6 -->
             <div class="card-destino">
                 <img src="img/Paris.jpg" alt="Paris">
+
                 <div>
                     <span>Paris</span>, França
-                    <p>A cidade luz te espera com romance, gastronomia e história.</p>
-                    <div class="valor"><h3>R$ 3.900,00</h3><span>R$ 4.400,00</span></div>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus in saepe illum!
+                    </p>
+
+                    <div class="valor">
+                        <h3>R$ 3.900,00</h3>
+                        <span>R$ 4.400,00</span>
+                    </div>
+
+                    <div class="card-btn"></div>
                     <button class="button learn-more-button">Saiba mais</button>
                 </div>
             </div>
         </div>
+        
     </section>
 
-    <!-- ===== Seção de Avaliações ===== -->
-    <section class="avaliacoes" id="avaliacoes">
-        <h1>Avaliações dos Clientes</h1>
-        <div class="carrossel">
-            <div class="cliente">
-                <p>"Viajar com a Buenas Viagens foi incrível! Tudo muito bem organizado."</p>
-                <img src="img/cliente01.png" alt="cliente01">
-                <p><span>Thiara</span>, cliente</p>
-            </div>
-            <div class="cliente">
-                <p>"Experiência maravilhosa, recomendo para todos que buscam aventura!"</p>
-                <img src="img/cliente02.png" alt="cliente02">
-                <p><span>Maria</span>, cliente</p>
-            </div>
-            <div class="cliente">
-                <p>"Paisagens lindas e atendimento excelente! Com certeza viajarei de novo."</p>
-                <img src="img/cliente03.png" alt="cliente03">
-                <p><span>Fabinho</span>, cliente</p>
-            </div>
+    <!-- ===== Avaliações ===== -->
 
-            <button class="anterior">&#10094;</button>
-            <button class="proximo">&#10095;</button>
+    <section class="avaliacoes" id="avaliacoes">
+
+            <h1>Avaliações dos Clientes</h1>
+
+            <div class="carrossel">
+                <div class="cliente">
+                    <p>
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta."
+                    </p>
+
+                    <img src="img/cliente01.png" alt="cliente01">
+
+                    <p>
+                        <span>Thiara</span>, cliente
+                    </p>
+            
+
+
+                </div>
+
+                <div class="cliente">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni debitis maiores officia sed deserunt obcaecati? Architecto, excepturi.
+                    </p>
+
+                    <img src="img/cliente02.png" alt="cliente02">
+
+                    <p>
+                        <span>Maria</span>, cliente
+                    </p>
+                </div>
+
+                <div class="cliente">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, ratione!
+                    </p>
+
+                    <img src="img/cliente03.png" alt="cliente03">
+
+                    <p>
+                        <span>Fabinho</span>, cliente
+                    </p>
+                </div>
+
+                <button class="anterior">&#10094;</button>
+                <button class="proximo">&#10095;</button>
         </div>
     </section>
-
     <!-- ===== Rodapé ===== -->
     <footer>
         <div class="empresa">
             <h1 class="logo">Buenas Viagens!</h1>
-            <p><span>Buenas Viagens & Turismo S.A.</span> – sua agência de confiança para explorar o mundo!</p>
-            <p>&copy; 2024 Todos os direitos reservados</p>
+
+            <p>
+                <span>Buenas Viagens & turismo S.A.</span>
+                Lorem ipsum dolor, sit 01150 amet consectetur. 
+            </p>
+
+            <P>
+                Buenas Viagens & turismo S.A. &copy; Todos os direitos reservados 2024
+            </P>
         </div>
 
         <div class="parceiros">
-            <h3>Nossos Parceiros</h3>
-            <p>Travel Co.</p>
-            <p>Global Tours</p>
-            <p>Fly High Agency</p>
-            <p>Adventure World</p>
+            <h3>Nossos parceiros</h3>
+
+            <p>Consectetur Adipisicing</p>
+                <p>Parkour Autem Horum</p>
+                <p>Distinctio Laudantium Ducimus</p>
+                <p>Temporibus vel Magnam</p>
+                <p>Commodi Sed Quart</p>
+                <p>Quas Perspiciatis Blanditiis</p>
+                <p>Aspernatur</p>
+            
         </div>
 
         <div class="newsletter">
+
             <h3>Assine a Nossa Newsletter</h3>
+
             <div class="input-group">
-                <input type="text" placeholder="Informe seu e-mail">
+                <input type="text" placeholder="Informe seu E-mail">
                 <button class="button">Enviar</button>
             </div>
 
@@ -199,6 +324,9 @@
         </div>
     </footer>
 
-    <script src="JS/script.js"></script>
+    <div class="rodape"></div>
+
 </body>
+
+<script src="JS/script.js"></script>
 </html>
